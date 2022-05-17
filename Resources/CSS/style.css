@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+:root{
+    /* Line Box Colors */
+    --Team-Builder-box: hsl(0, 78%, 62%);
+    --Supervisor-box: hsl(180, 62%, 55%);
+    --Karma-box: hsl(34, 97%, 64%);
+    --Calculator-box: hsl(212, 86%, 64%);
+    /* Neutral color */
+    --Headings: hsl(234, 12%, 34%);
+    --Paragraph: hsl(229, 6%, 66%);
+    --Background: hsl(0, 0%, 98%);
+    --Card-background: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Background);
+    padding: 3.8rem;
+}
+/* TYPOGRAPHY */
+.headings{
+    color: var(--Headings);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.h1{
+    color: var(--Headings);
+    font-weight: 200;
+    font-size: 2rem;
+}
+.h2{
+    color: var(--Headings);
+    font-weight: 600;
+    font-size: 2.05rem;
+}
+.para_1{
+    font-size: 1.1rem;
+    color: var(--Paragraph);
+}
+.card_text{
+    color: var(--Paragraph);
+}
+
+/* TEXT SECTION */
+.text_section{
+    text-align: center;
+}
+.text_section > :last-child{
+    margin: 2rem 0 6rem 0;
+}
+
+/* CARD SECTION */
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Card-background);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+.card > :nth-child(2){
+    margin: 1rem 0 3rem 0;
+}
+.card :last-child{
+    margin-left: auto;
+}
+.light-blue{
+    border-top: 5px solid var(--Supervisor-box);
+}
+.red{
+    border-top: 5px solid var(--Team-Builder-box);
+}
+.yellow{
+    border-top: 5px solid var(--Karma-box);
+}
+.blue{
+    border-top: 5px solid var(--Calculator-box);
+}
+.box-shadow{
+    box-shadow: 2px 13px 13px 2px hsla(216, 24%, 67%, 0.307);
+}
+
+@media only screen and (min-width: 700px){
+    body{
+        padding: 1rem 2rem 0 2rem;
+    }
+    .card_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .card{
+        width: 30%;
+        margin: 0 0rem;
+    }
+    .card_center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_center .card{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .card > :nth-child(2){
+        margin: .5rem 0 2rem 0;
+    }
+    .card_icon{
+        height: 4rem;
+        width: auto;
+    }
+    .card_icon img{
+        height: 100%;
+    }
+    .text_section :last-child{
+        margin: .5rem 0 1.5rem 0;
+    }
+    .para_1{
+        padding: 0 27rem;
+    }
+}
