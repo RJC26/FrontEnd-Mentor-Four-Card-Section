@@ -117,10 +117,15 @@ body{
     .card_icon img{
         height: 100%;
     }
+    .text_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .text_section :last-child{
         margin: .5rem 0 1.5rem 0;
     }
     .para_1{
-        padding: 0 27rem;
+        width: 40%;
     }
 }
